@@ -534,6 +534,7 @@ body:not(.wide) .fit > .fit-inner{position:static;transform:none !important;widt
 .pin-note{text-align:center;background:#fff;border-radius:14px;padding:8px 12px;margin:0 auto 12px;max-width:360px;font-weight:800;box-shadow:0 3px 0 var(--panel-edge)}
 .pin-note b{font-size:20px;letter-spacing:3px;color:#7B3FF2}
 .pin-help{font-size:12.5px;font-weight:800;color:#5b6283;line-height:1.45;margin:6px 4px 0}
+.start-warn{text-align:center;color:#FF6B7A;font-weight:900;font-size:16px;margin-top:10px;min-height:22px;text-shadow:0 1px 0 rgba(0,0,0,.35)}
 #confetti{position:fixed;inset:0;pointer-events:none;z-index:80}
 
 @media (max-width:640px){
@@ -594,7 +595,6 @@ body:not(.wide) .fit > .fit-inner{position:static;transform:none !important;widt
               <span>✏️</span>
               <input id="nameInput" maxlength="20" autocomplete="off" placeholder="Taip code anda" oninput="checkCover()" aria-label="Taip code anda">
             </form>
-            <div class="cover-help" id="coverHelp"></div>
           </div>
           <div id="pinWrap" hidden>
             <div class="step-q"><i>3</i>PIN (4 nombor)</div>
@@ -609,6 +609,7 @@ body:not(.wide) .fit > .fit-inner{position:static;transform:none !important;widt
         <div id="coverResume"></div>
       </div>
       <div class="cover-go"><button class="kbtn green" id="coverStartBtn" onclick="coverStart()" disabled><span>MULA</span></button></div>
+      <div class="start-warn" id="coverHelp" role="alert"></div>
     </div>
   </div>
 </div>
@@ -990,7 +991,7 @@ function checkCover(){
   const ok = !!c && n.length >= 2 && pin.length === 4;
   document.getElementById('coverStartBtn').disabled = !ok;
   const h = document.getElementById('coverHelp'); h.classList.remove('err');
-  h.textContent = !c ? 'Pilih detektif dahulu.' : n.length<2 ? 'Taip code anda (sekurang-kurangnya 2 aksara).' : pin.length<4 ? 'Masukkan PIN 4 nombor.' : `Sedia, Detektif ${n}? Tekan MULA!`;
+  h.textContent = ok ? '' : '⚠ Butang MULA belum boleh ditekan: ' + (!c ? 'pilih detektif anda dahulu.' : n.length<2 ? 'taip code anda (sekurang-kurangnya 2 aksara).' : 'masukkan PIN 4 nombor.');
 }
 let starting = false;
 async function coverStart(){
