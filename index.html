@@ -325,7 +325,7 @@ body.on-cover #mapWrap,body.on-cover #topbar{opacity:0;pointer-events:none}
 .cover-go{text-align:center;margin-top:22px}
 .cover-go .kbtn{font-size:30px;min-height:70px;border-width:24px 34px;padding:0 26px}
 .cover-go .kbtn > span{margin:-24px 0}
-.cover-help{font-size:13px;color:#5b6283;font-weight:800;margin:8px 4px 0;min-height:18px}
+.cover-help{margin:6px 4px 0 !important;font-size:13px;color:#5b6283;font-weight:800;margin:8px 4px 0;min-height:18px}
 .cover-foot{color:rgba(255,255,255,.85);font-size:12px;font-weight:700;margin-top:26px}
 .icon-btn{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.18);color:#fff;font-size:18px;display:grid;place-items:center;border:2px solid rgba(255,255,255,.35)}
 #cover .icon-btn{position:fixed;top:14px;right:14px;z-index:2;background:rgba(29,35,64,.35)}
@@ -533,6 +533,7 @@ body:not(.wide) .fit > .fit-inner{position:static;transform:none !important;widt
 .tier-key{text-align:center;font-size:13px;font-weight:800;color:#5b6283;margin:-8px 0 12px}
 .pin-note{text-align:center;background:#fff;border-radius:14px;padding:8px 12px;margin:0 auto 12px;max-width:360px;font-weight:800;box-shadow:0 3px 0 var(--panel-edge)}
 .pin-note b{font-size:20px;letter-spacing:3px;color:#7B3FF2}
+.pin-help{font-size:12.5px;font-weight:800;color:#5b6283;line-height:1.45;margin:6px 4px 0}
 #confetti{position:fixed;inset:0;pointer-events:none;z-index:80}
 
 @media (max-width:640px){
@@ -576,7 +577,7 @@ body:not(.wide) .fit > .fit-inner{position:static;transform:none !important;widt
       <div class="cover-logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAABGdBTUEAALGPC/xhBQAAAGNQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAj4+PLy8vf39/T09PX19fHx8fb29vn5+f39/fr6+vz8/P7+/vv7+/Dw8PPz8/////AAAAp+olSgAAABB0Uk5Tr09vP89fL49/nx+/3+8PACYIBPIAAALaSURBVEjHnZbrlqsgDIVpbb2AMr1YWxWV93/KYyBBRJypJ3/aJXwQQrIJ+9kxeRazneXeONv5zittrOIHwYtGuxwDz9pZfggUMzG27QjOfg3yszBbddPUWW9z/gXICwyLnmYjfxn/A5T5cjgf1DqTv4Ep7TY+WgWgah8jfqrSffBqp7ze/eRZ/37Z79c9MLObtdPGEM3ioNlvuE0x65twTxZwH3KvHuF3rMltNcD4aQuauLwsp55+VJ8mTFM3rFKXQFnCfh3M+DxtLOZFPvbf8+PISwiawLSLT7M1PZ5sXtFs2vqpiyA3M1fcyqwvjecsggUcsCd/dHUVhJQnOIS+w2APt1L4oNlQ0RCMpSVyqV1VmyAr+Mc9MKORWtOaMlsy1JAPcz0uDSwIy79pxWJbQwVGeXq7AmXk6QALwkWUsbKFlWuYMVAWzKA8wYLPCa8tiYEJbQlLi6sEkFtdAk9vscJbDnxDX+c04D9Mop51ePT564bEORC+DrVPstyr92FH13DO4GlCzspVCRpdK2OhCecwchPNuBKCsTmMwoX22QPDOcbVpl9VetTVcM7/B0eiIip3HdX2Oip3HQq1UjLSUkiAB9VDaLZWlgSYNRZSzqSwS7k0lnKpn3KaSUzylA4Avord1wsCM5BIRsoq8iDmFAXjqVzAggp5dLLr9wBXp0ijq1e2HEGRK1Djfg+QOdFpl7pjyxleTgK1SAsSK8GZkzmzrFipXOJURd1j8njvnCIla0EW5OzUEYk9wMLd/BeL+clhZdcu7PUAVm1sREsZPjon86RaUo3+ozPaR8ek1ZIebP2s2kdiRuvBgkONXx7BA8kC8Rze8Ye1Dp9ktqmesdty7WtTb+vmActHrTGF5Xbdb1cSfGrujWPbBnuOKvm1QSr2GqRC/tGSJSIGXpIvmsCEhT2AOH3ZdvJz6fUAOT/Qr3q9YHGo0SXti2ne7z253wMcAlc9QMz+AT01DcWo4QWgAAAAAElFTkSuQmCC" alt="">DETEKTIF<br class="logo-br"> SUMBER</div>
       <div class="cover-sub">🌘 Misi Gerhana · Siasat 3 sumber, cari petunjuk!</div>
       <div class="cover-go"><button class="kbtn blue" onclick="sfx.click();showBoard()"><span>🏆 Papan Markah</span></button></div>
-      <div class="cover-foot">GGGP6153 · Kumpulan 1 · Grafik: Kenney (CC0)</div>
+      <div class="cover-foot">GGGP6153 © Kuiz Senario</div>
     </div>
     <div class="cover-right">
       <div class="cover-card">
@@ -588,11 +589,12 @@ body:not(.wide) .fit > .fit-inner{position:static;transform:none !important;widt
         </div>
         <div class="id-row">
           <div class="id-name">
-            <div class="step-q"><i>2</i>Taip nama anda</div>
+            <div class="step-q"><i>2</i>Taip code anda</div>
             <form class="name-box" onsubmit="event.preventDefault();coverStart()">
               <span>✏️</span>
-              <input id="nameInput" maxlength="20" autocomplete="off" placeholder="Taip nama anda" oninput="checkCover()" aria-label="Taip nama anda">
+              <input id="nameInput" maxlength="20" autocomplete="off" placeholder="Taip code anda" oninput="checkCover()" aria-label="Taip code anda">
             </form>
+            <div class="cover-help" id="coverHelp"></div>
           </div>
           <div id="pinWrap" hidden>
             <div class="step-q"><i>3</i>PIN (4 nombor)</div>
@@ -601,9 +603,9 @@ body:not(.wide) .fit > .fit-inner{position:static;transform:none !important;widt
               <input id="pinInput" type="password" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="cth: 2580" oninput="this.value=this.value.replace(/\D/g,'');checkCover()" aria-label="PIN rahsia 4 nombor">
               <button type="button" class="eye-btn" onclick="togglePinInput(this)" title="Lihat PIN" aria-label="Lihat PIN">👁</button>
             </form>
+            <div class="pin-help">🆕 Kali pertama? Cipta 4 nombor yang mudah anda ingat.<br>🔁 Pernah main? Masukkan PIN yang sama.</div>
           </div>
         </div>
-        <div class="cover-help" id="coverHelp"></div>
         <div id="coverResume"></div>
       </div>
       <div class="cover-go"><button class="kbtn green" id="coverStartBtn" onclick="coverStart()" disabled><span>MULA</span></button></div>
@@ -988,7 +990,7 @@ function checkCover(){
   const ok = !!c && n.length >= 2 && pin.length === 4;
   document.getElementById('coverStartBtn').disabled = !ok;
   const h = document.getElementById('coverHelp'); h.classList.remove('err');
-  h.textContent = !c ? 'Pilih detektif dahulu.' : n.length<2 ? 'Taip nama anda (sekurang-kurangnya 2 huruf).' : pin.length<4 ? 'Masukkan PIN 4 nombor.' : `Sedia, Detektif ${n}? Tekan MULA!`;
+  h.textContent = !c ? 'Pilih detektif dahulu.' : n.length<2 ? 'Taip code anda (sekurang-kurangnya 2 aksara).' : pin.length<4 ? 'Masukkan PIN 4 nombor.' : `Sedia, Detektif ${n}? Tekan MULA!`;
 }
 let starting = false;
 async function coverStart(){
@@ -1005,7 +1007,7 @@ async function coverStart(){
       if(!res.ok){
         starting = false; lab.textContent = 'MULA'; checkCover(); sfx.warn();
         help.classList.add('err');
-        help.textContent = res.error==='pin' ? 'Nama ini sudah didaftarkan dengan PIN lain. Semak PIN anda, atau gunakan nama lain.' : 'Semak nama dan PIN anda.';
+        help.textContent = res.error==='pin' ? 'Code ini sudah didaftarkan dengan PIN lain. Semak PIN anda, atau gunakan code lain.' : 'Semak code dan PIN anda.';
         return;
       }
       const same = state.name && state.name.toLowerCase()===n.toLowerCase();
@@ -1345,7 +1347,7 @@ function showSummary(){
   const pass = SCENARIOS.filter(s=>state.done[s.id]?.lulus).length, hp3 = pass>=2;
   const rows = SCENARIOS.map(s=>{ const r=state.done[s.id], t=state.tries[s.id]||1;
     if(!r) return `<tr><td>Senario ${s.no} · ${s.short}<br><small style="font-weight:700;color:#5b6283">Belum dijawab</small></td><td><b class="sum-mk">–</b> <button class="mini-btn" onclick="retryScenario('${s.id}')" title="Mula">▶</button></td></tr>`;
-    return `<tr><td>Senario ${s.no} · ${s.short}<br><small style="font-weight:700;color:#5b6283">Terbaik: ${r.correct}/${r.totalClues} petunjuk, keputusan ${r.aStatus==='ok'?'betul':'kurang tepat'} · ${r.traps} perangkap · ${t} cubaan</small></td>
+    return `<tr><td>Senario ${s.no} · ${s.short}<br><small style="font-weight:700;color:#5b6283">${r.correct}/${r.totalClues} petunjuk, keputusan ${r.aStatus==='ok'?'betul':'kurang tepat'} · ${r.traps} perangkap · ${t} cubaan</small></td>
       <td><b class="sum-mk">${markOf(r)}/${r.max||maxOf(s.id)}</b> <span class="pill ${r.lulus?'ok':'no'}">${r.lulus?'Lulus':'Belum'}</span>
       <button class="mini-btn" onclick="retryScenario('${s.id}')" title="Cuba lagi">🔁</button></td></tr>`; }).join('');
   openModal(`<div class="panel-head"><h2>Siasatan Selesai!</h2><button class="close-x" onclick="sfx.click();closeModal()" aria-label="Tutup">✕</button></div>
@@ -1362,6 +1364,7 @@ function showSummary(){
         <table class="sum-table">${rows}</table>
         ${barHtml(marks(),TOTAL_MAX(),`🏅 ${marks()} / ${TOTAL_MAX()} markah`)}
         <div class="q-sub" style="margin-top:10px">Mahu markah lebih tinggi? Tekan 🔁 untuk cuba lagi mana-mana senario.</div>
+
         <div class="btn-row">
           <button class="kbtn blue" onclick="sfx.click();showBoard()"><span>🏆 Papan Markah</span></button>
         </div>
