@@ -535,6 +535,13 @@ body:not(.wide) .fit > .fit-inner{position:static;transform:none !important;widt
 .pin-note b{font-size:20px;letter-spacing:3px;color:#7B3FF2}
 .pin-help{font-size:12.5px;font-weight:800;color:#5b6283;line-height:1.45;margin:6px 4px 0}
 .start-warn{text-align:center;color:#FF6B7A;font-weight:900;font-size:16px;margin-top:10px;min-height:22px;text-shadow:0 1px 0 rgba(0,0,0,.35)}
+.bv-semak{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.bv-semak .sk{background:#F4F5FA;border:3px solid #fff;border-radius:14px;box-shadow:0 4px 0 var(--panel-edge);padding:10px 8px;text-align:center;animation:pop .4s cubic-bezier(.3,1.6,.6,1) both}
+.bv-semak .sk b{display:grid;place-items:center;width:44px;height:44px;margin:0 auto 6px;border-radius:12px;color:#fff;font-family:var(--display);font-size:24px;box-shadow:inset 0 -4px 0 rgba(0,0,0,.18)}
+.bv-semak .sk span{display:block;font-weight:900;font-size:14.5px;line-height:1.25;color:var(--ink)}
+.bv-semak .sk0 b{background:var(--pink)}.bv-semak .sk1 b{background:var(--orange)}.bv-semak .sk2 b{background:var(--green)}.bv-semak .sk3 b{background:var(--cyan)}.bv-semak .sk4 b{background:var(--purple)}
+.bv-semak .sk1{animation-delay:.1s}.bv-semak .sk2{animation-delay:.2s}.bv-semak .sk3{animation-delay:.3s}.bv-semak .sk4{animation-delay:.4s}
+@media (max-width:640px){ .bv-semak{grid-template-columns:1fr 1fr} }
 #confetti{position:fixed;inset:0;pointer-events:none;z-index:80}
 
 @media (max-width:640px){
@@ -554,7 +561,7 @@ body:not(.wide) .fit > .fit-inner{position:static;transform:none !important;widt
 <canvas id="stars"></canvas>
 <div id="topbar">
   <div class="logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAABGdBTUEAALGPC/xhBQAAAGNQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAj4+PLy8vf39/T09PX19fHx8fb29vn5+f39/fr6+vz8/P7+/vv7+/Dw8PPz8/////AAAAp+olSgAAABB0Uk5Tr09vP89fL49/nx+/3+8PACYIBPIAAALaSURBVEjHnZbrlqsgDIVpbb2AMr1YWxWV93/KYyBBRJypJ3/aJXwQQrIJ+9kxeRazneXeONv5zittrOIHwYtGuxwDz9pZfggUMzG27QjOfg3yszBbddPUWW9z/gXICwyLnmYjfxn/A5T5cjgf1DqTv4Ep7TY+WgWgah8jfqrSffBqp7ze/eRZ/37Z79c9MLObtdPGEM3ioNlvuE0x65twTxZwH3KvHuF3rMltNcD4aQuauLwsp55+VJ8mTFM3rFKXQFnCfh3M+DxtLOZFPvbf8+PISwiawLSLT7M1PZ5sXtFs2vqpiyA3M1fcyqwvjecsggUcsCd/dHUVhJQnOIS+w2APt1L4oNlQ0RCMpSVyqV1VmyAr+Mc9MKORWtOaMlsy1JAPcz0uDSwIy79pxWJbQwVGeXq7AmXk6QALwkWUsbKFlWuYMVAWzKA8wYLPCa8tiYEJbQlLi6sEkFtdAk9vscJbDnxDX+c04D9Mop51ePT564bEORC+DrVPstyr92FH13DO4GlCzspVCRpdK2OhCecwchPNuBKCsTmMwoX22QPDOcbVpl9VetTVcM7/B0eiIip3HdX2Oip3HQq1UjLSUkiAB9VDaLZWlgSYNRZSzqSwS7k0lnKpn3KaSUzylA4Avord1wsCM5BIRsoq8iDmFAXjqVzAggp5dLLr9wBXp0ijq1e2HEGRK1Djfg+QOdFpl7pjyxleTgK1SAsSK8GZkzmzrFipXOJURd1j8njvnCIla0EW5OzUEYk9wMLd/BeL+clhZdcu7PUAVm1sREsZPjon86RaUo3+ozPaR8ek1ZIebP2s2kdiRuvBgkONXx7BA8kC8Rze8Ye1Dp9ktqmesdty7WtTb+vmActHrTGF5Xbdb1cSfGrujWPbBnuOKvm1QSr2GqRC/tGSJSIGXpIvmsCEhT2AOH3ZdvJz6fUAOT/Qr3q9YHGo0SXti2ne7z253wMcAlc9QMz+AT01DcWo4QWgAAAAAElFTkSuQmCC" alt="">Detektif Sumber</div>
-  <div class="semak-strip" title="Siapa · Edisi · Mana · Apa · Kenapa"><span>S</span><span>E</span><span>M</span><span>A</span><span>K</span></div>
+  <div class="semak-strip" title="S: Siapakah penulis? · E: Edisi: bila dikemas kini? · M: Mana rujukannya? · A: Apa tujuannya? · K: Kenapa saya percaya?"><span>S</span><span>E</span><span>M</span><span>A</span><span>K</span></div>
   <div style="display:flex;gap:8px;align-items:center">
     <button class="icon-btn" onclick="sfx.click();showCover()" title="Muka depan" aria-label="Muka depan">🏠</button>
     <button class="icon-btn" onclick="sfx.click();showBoard()" title="Papan Markah" aria-label="Papan Markah">🏆</button>
@@ -659,8 +666,8 @@ const SCENARIOS = [
     note:'',
     a:[
       {t:'Boleh dipercayai', s:'no', fb:'Siasat semula! Siapa "Admin"? Bila berita ini ditulis?'},
-      {t:'Tidak boleh dipercayai', s:'ok', fb:'Tepat! Laman ini gagal hampir semua soalan SEMAK.'},
-      {t:'Tidak pasti, perlu semak sumber lain', s:'mid', fb:'Anda berhati-hati, bagus. Tetapi laman ini gagal hampir semua soalan SEMAK, jadi kita boleh kata ia tidak boleh dipercayai.'}
+      {t:'Tidak boleh dipercayai', s:'ok', fb:'Tepat! Laman ini tidak mencapai hampir semua elemen SEMAK.'},
+      {t:'Tidak pasti, perlu semak sumber lain', s:'mid', fb:'Anda berhati-hati, bagus. Tetapi laman ini tidak mencapai hampir semua elemen SEMAK, jadi kita boleh kata ia tidak boleh dipercayai.'}
     ],
     b:[
       {t:'Tajuk ditulis dengan huruf besar dan sensasi: "SAINTIS TERKEJUT!"', clue:true, k:'A', miss:'Apa tujuannya? Tajuk begini mahu kita klik, bukan mahu kita faham.'},
@@ -671,7 +678,7 @@ const SCENARIOS = [
       {t:'Ada tulisan berwarna biru.', clue:false, pick:'Warna tulisan bukan soalan SEMAK.'},
       {t:'Laman ini penuh iklan dan kotak pop-up.', clue:true, k:'A', miss:'Apa tujuannya? Banyak iklan tanda laman ini mahu menjana wang.'}
     ],
-    general:'Laman ini gagal hampir semua soalan SEMAK. Bulan tidak hilang selepas gerhana. Gerhana bulan hanya berlaku selama beberapa jam.'
+    general:'Laman ini tidak mencapai hampir semua elemen SEMAK. Bulan tidak akan hilang selepas gerhana. Gerhana bulan hanya berlaku selama beberapa jam.'
   },
   {
     id:'s3', no:'3.3', short:'AI', color:'linear-gradient(180deg,#5BF09B,#1FBF68)',
@@ -1062,16 +1069,19 @@ function openNode(i){
 /* ---------- Skrin 3.0: taklimat Detektif Dina (dialog, satu halaman demi satu) ---------- */
 const BRIEF = [
   { t: n => `Hebat, Detektif ${n}! Anda sudah pandai menggunakan SEMAK.`, pose:'talk' },
+  { t: () => `Mari ingat semula senarai semak SEMAK. Tanya lima soalan ini untuk setiap sumber:`, pose:'talk', vis:'semak' },
   { t: () => `Sekarang ada tiga sumber baharu menunggu siasatan anda di tiga planet.`, pose:'talk', vis:'planets' },
-  { t: () => `Kali ini, tiada petunjuk. Siasat setiap sumber seorang diri!`, pose:'talk' },
+  { t: () => `Kali ini, tiada petunjuk. Siasat setiap sumber sendiri!`, pose:'talk' },
   { t: () => `Langkah 1: Siasat dahulu. Periksa sumber itu dan pilih SEMUA petunjuk yang membuatkan anda ragu.`, pose:'talk', vis:'b' },
   { t: () => `Langkah 2: Baru putuskan. Adakah sumber ini boleh dipercayai? Pilih SATU jawapan.`, pose:'talk', vis:'a' },
   { t: () => `Setiap petunjuk betul = 1 markah. Keputusan yang betul = 1 markah lagi!`, pose:'talk', vis:'score' },
-  { t: () => `Berhati-hati! Bukan semua pilihan ialah petunjuk. Ada perangkap!`, pose:'talk', vis:'trap' },
+  { t: () => `Berhati-hati! Bukan semua pilihan adalah petunjuk. Ada perangkap!`, pose:'talk', vis:'trap' },
   { t: () => `Anda boleh kembali dan cuba lagi untuk dapatkan markah yang lebih tinggi. Sedia, Detektif?`, pose:'talk', vis:'retry' }
 ];
 let briefPage = 0, briefFirst = false, typeTimer = null, mouthTimer = null, typing = false;
 function briefVisual(v){
+  if(v==='semak') return `<div class="bv-semak">${[['S','Siapakah penulis?'],['E','Edisi: bila dikemas kini?'],['M','Mana rujukannya?'],['A','Apa tujuannya?'],['K','Kenapa saya percaya?']]
+    .map(([l,q],i)=>`<div class="sk sk${i}"><b>${l}</b><span>${q}</span></div>`).join('')}</div>`;
   if(v==='planets') return `<div class="bv-planets"><img src="${S.pl_red}" alt=""><img src="${S.pl_blue}" alt=""><img src="${S.pl_teal}" alt=""></div>`;
   if(v==='a') return `<div class="bv-row"><span class="bv-pill g">Boleh dipercayai</span><span class="bv-pill r">Tidak boleh dipercayai</span><span class="bv-pill b">Tidak pasti</span></div>`;
   if(v==='b') return `<div class="bv-row"><span class="bv-tile on">✓ Petunjuk 1</span><span class="bv-tile">Petunjuk 2</span><span class="bv-tile on">✓ Petunjuk 3</span></div>`;
